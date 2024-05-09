@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Attendance System</title>
+</head>
+<body>
+  <h2>Employee Attendance</h2>
+  <form action="connect.php" method="post">
+    <br>
+   <label for="employee_id">Employee ID:</label>
+    <input type="number" name="employee_id" required><br>
+    <br>
+    <label for="attendance_date">Attendance Date:</label>
+    <input type="date" id="attendance_date" name="attendance_date" required min="2024-05-03" max="2024-05-08"><br><br>
+    <label for="attendance_status">Attendance Status:</label>
+        <select id="attendance_status" name="attendance_status" required>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <form action="display.php" method="get">
+    <br>
+    <input type="submit" value="Display Record">
+
+  </form>
+</body>
+</html>
+
